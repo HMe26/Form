@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+}
+
+#main {
+  background-color: rgba(87, 121, 124, 0.781);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 450px;
+  margin: auto;
+}
+
+#contactForm {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm h1 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contactForm .form-control {
+  margin: 20px 0;
+}
+
+#contactForm .form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contactForm .form-control input,
+#contactForm .form-control textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+#contactForm .form-control input:focus,
+#contactForm .form-control textarea:focus {
+  border-color: #ab36ff;
+  outline: 0;
+}
+
+#contactForm .form-control span {
+  color: #882a67;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+/* Error */
+#contactForm .form-control.error input,
+#contactForm .form-control.error textarea {
+  border-color: #ff00dd;
+}
+
+#contactForm .form-control.error span {
+  visibility: visible;
+}
+
+#contactForm .btn-submit {
+  width: 100%;
+  background-color: #000000;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#contactForm .btn-submit:hover {
+  background-color: #9b588d;
+  
+}
+main {
+  flex: 1; /* This makes the main content area grow and push the footer down */
+}
+
+footer {
+  /* You can add your own styling here */
+  background-color: #4e4e4e;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  overflow: auto;
+
+  padding: 1rem 0;
+}
+
+.creat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Removes the underline from the link */
+  color: #fff; /* Sets the link color to white */
+}
+.creat:hover{
+  color: #ff00cc;
+}
